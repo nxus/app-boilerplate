@@ -2,7 +2,7 @@
 
 ## Installation
 
-	> git clone git@github.com:nxus/app-boilerplate.git && rm -rf ./app-boilerplace/.git
+	> git clone git@github.com:nxus/app-boilerplate.git && rm -rf ./app-boilerplate/.git
 
 ## Starting
 
