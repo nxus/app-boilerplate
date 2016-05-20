@@ -1,0 +1,48 @@
+{
+  "name": "nxus-app-boilerplate",
+  "version": "3.0.0-0",
+  "description": "Boilerplate for a basic Nxus App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register -R spec modules/**/test/* ",
+    "pretest": "forever stopall && NODE_ENV=test PORT=3002 forever -o test.log -e test.log start index.js && sleep 15",
+    "posttest": "forever stop index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxus/app-boilerplate.git"
+  },
+  "keywords": [
+    "nxus",
+    "boilerplate"
+  ],
+  "author": "mjreich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nxus/app-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nxus/app-boilerplate#readme",
+  "dependencies": {
+    "forever": "^0.15.1",
+    "nxus-base-ui": "^3.0.0-0",
+    "nxus-core": "^3.0.0-0",
+    "nxus-data-loader": "^3.0.0-0",
+    "nxus-renderer": "^3.0.0-0",
+    "nxus-router": "^3.0.0-0",
+    "nxus-storage": "^3.0.0-0",
+    "nxus-templater": "^3.0.0-0",
+    "nxus-tester": "^3.0.0-0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "mocha": "^2.2.5",
+    "should": "^7.0.2",
+    "sinon": "^1.17.2",
+    "chai": "^3.5.0",
+    "documentation": "^4.0.0-beta",
+    "chai-as-promised": "^5.2.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-cli": "^6.9.0"
+  }
+}
