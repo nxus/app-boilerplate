@@ -4,7 +4,7 @@
   "description": "Boilerplate for a basic Nxus App",
   "main": "index.js",
   "scripts": {
-    "dev": "DEBUG=nxus:* npm start",
+    "dev": "if [ ! $DEBUG ]; then export DEBUG=nxus:*; fi; npm start",
     "start": "node index.js",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register -R spec modules/**/test/* ",
     "pretest": "forever stopall && NODE_ENV=test PORT=3002 forever -o test.log -e test.log start index.js && sleep 15",
@@ -26,7 +26,8 @@
   "homepage": "https://github.com/nxus/app-boilerplate#readme",
   "dependencies": {
     "forever": "^0.15.1",
-    "nxus-core": "^4.0.0-0"
+    "nxus-core": "^4.0.0-0",
+    "nxus-router": "^4.0.0-0"
   },
   "devDependencies": {
     "babel-core": "^6.9.0",

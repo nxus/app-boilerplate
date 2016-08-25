@@ -11,5 +11,14 @@
         "adapter": "default"
       }
     }
+  },
+  "router-sessions": {
+    "cookie": {
+      "maxAge": 86400000
+    },
+    "secret": "nxus",
+    "name": "nxus",
+    "resave": true,
+    "saveUninitialized": true
   }
 }

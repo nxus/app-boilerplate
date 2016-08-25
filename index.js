@@ -16,15 +16,7 @@ if(process.env.NODE_ENV != 'production') {
   g.start();
 } 
 
-var Application = require('nxus-core').Application
+var application = require('nxus-core').application
 
-let opts = {
-  ignore: ['.tmp', 'modules/app/js', 'modules/countries/js', new RegExp('\.ejs'), new RegExp('\.css')],
-  modulesDir
-}
+application.start()
 
-var myApp = new Application(opts);
-
-myApp.start()
-
-module.exports = myApp;
