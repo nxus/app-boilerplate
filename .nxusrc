@@ -12,7 +12,13 @@
       }
     }
   },
-  "appName": "App",
-  "namespace": "nxus",
-  "appDir": "/Users/mike/Projects/nxus/boilerplate/app-boilerplate"
+  "router-sessions": {
+    "cookie": {
+      "maxAge": 86400000
+    },
+    "secret": "nxus",
+    "name": "nxus",
+    "resave": true,
+    "saveUninitialized": true
+  }
 }

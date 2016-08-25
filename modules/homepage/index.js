@@ -9,10 +9,16 @@
 
 import {application, NxusModule} from 'nxus-core'
 
+import {router} from 'nxus-router'
+
 export default class Homepage extends NxusModule {
   constructor(app) {
     super(app)
 
     this.log.debug('Loading Homepage')
+
+    router.route("/", (req, res) => {
+      res.send("Hi")
+    })
   }
 }
