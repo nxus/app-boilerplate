@@ -4,6 +4,7 @@
   "description": "Boilerplate for a basic Nxus App",
   "main": "index.js",
   "scripts": {
+    "dev": "DEBUG=*,-babel npm start",
     "start": "node index.js",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register -R spec modules/**/test/* ",
     "pretest": "forever stopall && NODE_ENV=test PORT=3002 forever -o test.log -e test.log start index.js && sleep 15",
