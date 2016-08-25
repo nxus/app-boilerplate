@@ -11,5 +11,8 @@
         "adapter": "default"
       }
     }
-  }
+  },
+  "appName": "App",
+  "namespace": "nxus",
+  "appDir": "/Users/mike/Projects/nxus/boilerplate/app-boilerplate"
 }
