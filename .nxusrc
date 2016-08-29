@@ -20,5 +20,8 @@
     "name": "nxus",
     "resave": true,
     "saveUninitialized": true
-  }
+  },
+  "appName": "App",
+  "namespace": "nxus",
+  "appDir": "/home/luke/projects/nxus/app-boilerplate"
 }
