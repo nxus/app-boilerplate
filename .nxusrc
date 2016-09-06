@@ -8,7 +8,8 @@
     },
     "connections": {
       "default": {
-        "adapter": "default"
+        "adapter": "default",
+        "filename": "tmp.db"
       }
     }
   },
