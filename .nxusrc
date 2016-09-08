@@ -8,21 +8,8 @@
     },
     "connections": {
       "default": {
-        "adapter": "default",
-        "filename": "tmp.db"
+        "adapter": "default"
       }
     }
-  },
-  "router-sessions": {
-    "cookie": {
-      "maxAge": 86400000
-    },
-    "secret": "nxus",
-    "name": "nxus",
-    "resave": true,
-    "saveUninitialized": true
-  },
-  "appName": "App",
-  "namespace": "nxus",
-  "appDir": "/home/luke/projects/nxus/app-boilerplate"
+  }
 }
