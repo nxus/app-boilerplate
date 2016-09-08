@@ -1,10 +1,5 @@
-//import {MVCModule} from 'nxus-web'
+import {MVCModule} from 'nxus-web'
 
-export default class MVCTest {
-  constructor() {
-    
-  }
+export default class MVCTest extends MVCModule {
+
 }
-// } extends MVCModule {
-
-// }

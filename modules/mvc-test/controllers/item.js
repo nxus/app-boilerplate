@@ -1,5 +1,9 @@
-import {Controller} from 'nxus-web'
+import {ViewController} from 'nxus-web'
 
-export default class MVCTestItem extends Controller {
+export default class MVCTestItem extends ViewController {
 
+  get modelIdentity() {
+    return 'mvc_test_item'
+  }
+  
 }
