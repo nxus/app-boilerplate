@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/nxus/app-boilerplate.git"
   },
+  "engines": {
+    "node": "~6.4"
+  },
   "keywords": [
     "nxus",
     "boilerplate"
