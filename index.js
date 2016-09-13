@@ -7,13 +7,7 @@
 
 'use strict';
 
-if(process.env.NODE_ENV != 'production') {
-  require('babel-register');
-} else {
-  process.env['modulesDir'] = __dirname+"/lib"
-  var g = require('idle-gc');
-  g.start();
-} 
+require('babel-register');
 
 var application = require('nxus-core').application
 
