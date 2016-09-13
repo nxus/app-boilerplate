@@ -32,9 +32,10 @@
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.11.5",
     "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "forever": "^0.15.1",
     "idle-gc": "^1.0.1",
-    "nxus-clientjs": "^4.0.0-0",
+    "nxus-clientjs": "^4.0.0-1",
     "nxus-core": "^4.0.0-0",
     "nxus-router": "^4.0.0-0",
     "nxus-storage": "^4.0.0-0",
