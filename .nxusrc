@@ -11,5 +11,8 @@
         "adapter": "default"
       }
     }
+  },
+  "sendgrid": {
+    "disabled": true
   }
 }
