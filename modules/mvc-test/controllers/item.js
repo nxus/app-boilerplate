@@ -2,9 +2,12 @@ import {ViewController} from 'nxus-web'
 
 export default class MVCTestItem extends ViewController {
 
-  get modelIdentity() { return 'mvc_test_item' }
-
-  get displayName() { return 'Items' } 
+  constructor() {
+    super({
+//      modelIdentity: 'mvc_test_item',
+      displayName: 'Items'
+    })
+  }
 
   detail(req, res, query) {
     return super.detail(req, res, query).then((ctx) => {
