@@ -14,5 +14,19 @@
   },
   "sendgrid": {
     "disabled": true
+  },
+  "worker-queue": {
+    "redis_url": "redis://localhost:6379"
+  },
+  "client-js": {
+    "babel": {
+      "presets": [
+        "es2015"
+      ],
+      "plugins": [
+        "transform-function-bind",
+        "transform-object-rest-spread"
+      ]
+    }
   }
 }
