@@ -13,6 +13,7 @@ import {router} from 'nxus-router'
 
 import {templater} from 'nxus-templater'
 import {clientjs} from 'nxus-clientjs'
+import {admin} from 'nxus-admin'
 
 export default class Homepage extends NxusModule {
   constructor(app) {
@@ -24,14 +25,17 @@ export default class Homepage extends NxusModule {
       res.send("Hi")
     }) 
 
-    templater.templateDir(__dirname+"/templates", "page", "ejs")
+    templater.template(__dirname+"/templates/homepage.ejs", 'page')
+    templater.template(__dirname+"/templates/my-admin-page.ejs")
 
     router.route("/", ::this.homepage)
 
     clientjs.includeScript('homepage', __dirname+"/client/component.js")
+
+    admin.page({route: '/my-page', icon: 'fa fa-question'}, 'my-admin-page')
   }
 
   homepage (req, res) {
-    templater.render("homepage", {greeting: "Hi"}).then(::res.send)
+    templater.render("homepage", {title: 'Welcome to Nxus', greeting: "Hi"}).then(::res.send)
   }
 }
