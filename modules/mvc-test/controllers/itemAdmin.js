@@ -4,7 +4,8 @@ export default class MVCTestItemAdmin extends AdminController {
 
   constructor() {
     super({
-      modelIdentity: 'mvc_test_item'
+      modelIdentity: 'mvc_test_item',
+      order: 0
     })
   }
 

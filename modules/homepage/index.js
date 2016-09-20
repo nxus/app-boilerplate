@@ -32,7 +32,31 @@ export default class Homepage extends NxusModule {
 
     clientjs.includeScript('homepage', __dirname+"/client/component.js")
 
-    admin.page({route: '/my-page', icon: 'fa fa-question'}, 'my-admin-page')
+    admin.page({route: '/my-page', icon: 'fa fa-question', order: 1}, 'my-admin-page')
+
+    admin.page('my-direct-page', (req, res, next) => {
+      res.send('test')
+      next()
+    })
+
+    admin.page('my-redirect-page', (req, res, next) => {
+      res.redirect('/admin')
+      next()
+    })
+
+    admin.page('my-text-page', (req, res) => {
+      return 'text'
+    })
+
+    admin.page('my-promise-page', (req, res) => {
+      return Promise.resolve('promise text')
+    })
+
+    admin.page('my-object-page', (req, res) => {
+      return {blah: 'doh'}
+    })
+
+    admin.manage('other_item')
   }
 
   homepage (req, res) {
