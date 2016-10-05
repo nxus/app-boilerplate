@@ -6,7 +6,7 @@
 
 ## Starting
 
-	> npm start
+	> npm run dev
 
 ## Testing
 
