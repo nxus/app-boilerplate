@@ -37,6 +37,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "babel-preset-es2015": "^6.9.0",
     "forever": "^0.15.1",
+    "nxus-admin": "^4.0.0-2",
     "nxus-clientjs": "^4.0.0-1",
     "nxus-core": "^4.0.0-2",
     "nxus-router": "^4.0.0-0",
