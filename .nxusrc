@@ -18,7 +18,7 @@
   "worker-queue": {
     "redis_url": "redis://localhost:6379"
   },
-  "client-js": {
+  "client_js": {
     "babel": {
       "presets": [
         "es2015"
